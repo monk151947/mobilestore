@@ -1,0 +1,5 @@
+{
+	"databases": {
+		"store": "mongodb://jagdish151947:qwaszx12@ds015939.mlab.com:15939/mobile_store_db"
+	}
+}
