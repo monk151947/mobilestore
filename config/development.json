@@ -1,0 +1,5 @@
+{
+	"databases": {
+		"store": "mongodb://localhost/mobile_store_db"
+	}
+}
