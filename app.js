@@ -38,7 +38,7 @@ app.use(function(req, res, next) {
 
 // middleware to use for all requests
 // route middleware to verify a token
-app.use(function(req, res, next) {
+app.use('/api', function(req, res, next) {
 
   // check header or url parameters or post parameters for token
   var token = req.body.token || req.query.token || req.headers['x-access-token'];
@@ -71,7 +71,7 @@ app.use(function(req, res, next) {
 
 // We can add the version v1.1
 // app.use('/api/v1.1', app.router);
-app.use('/api', app.router);
+app.use('/', app.router);
 
 
 

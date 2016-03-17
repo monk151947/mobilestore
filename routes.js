@@ -20,18 +20,18 @@ module.exports = function(app) {
 
  app.post('/authenticate', userController.authenticate);
  app.post('/setup', userController.create);
- app.get('/users', userController.getUsers);
+ app.get('/api/users', userController.getUsers);
 
  //Creating products
- app.post('/products', productController.create);
+ app.post('/api/products', productController.create);
  //List all products
- app.get('/products', productController.getProducts);
+ app.get('/api/products', productController.getProducts);
  //List single product
- app.get('/products/:id', productController.getProduct);
+ app.get('/api/products/:id', productController.getProduct);
  //update the product
- app.put('/products/:id', productController.updateProduct);
+ app.put('/api/products/:id', productController.updateProduct);
  //Delete the product
- app.delete('/products/:id', productController.deleteProduct);
+ app.delete('/api/products/:id', productController.deleteProduct);
 
  
 
